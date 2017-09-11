@@ -4,15 +4,15 @@ import {Routes, RouterModule} from '@angular/router';
 import {AboutComponent} from './components/about/about.component';
 import {SearchComponent} from './components/search/search.component';
 
-const appRoutes: Routes = [
+const appRoutes = [
 	{
 		path:'',
-		component:SearchComponent
+		component: SearchComponent
 	}
 	,
 	{
 		path:'about',
-		component:AboutComponent
+		component: AboutComponent
 	}
 ];
 
