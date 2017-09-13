@@ -1,0 +1,12 @@
+.container{
+    padding-left: 80px;
+    padding-right: 80px;
+    display: block;
+}
+.spot{
+    margin: auto;
+    width: 400px;
+    position: relative;
+    display: block;
+    margin-top: 40px;
+}

@@ -31,5 +31,14 @@ p{
 h1{
     color: #8bedb3;
     font-weight: normal;
-
+}
+.navbar{
+    border-radius: 0px!important;
+}
+.navbar-inverse {
+    background-color: #428e68;
+    border-color: transparent;
+}
+.form-control{
+  border: none;
 }
