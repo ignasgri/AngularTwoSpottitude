@@ -3,6 +3,7 @@
 If search function is not working, your OAuth Token is probably expired. OAuth Token is active only for 1 hour!
 
 ## Demo
+[Live version on firebase server](https://ignas-spottitude.firebaseapp.com/)
 
 >![sapttitude](https://github.com/ignasgri/AngularTwoSpottitude/blob/master/src/assets/images/spot.JPG)
 >![artist](https://github.com/ignasgri/AngularTwoSpottitude/blob/master/src/assets/images/iggy.JPG)
@@ -13,7 +14,7 @@ If search function is not working, your OAuth Token is probably expired. OAuth T
 
 1. Clone app.
 2. Register your app on https://developer.spotify.com and genaterate OAuth Token.
-3. Place your OAuth Token insode `services` folder - `music.service.ts` file. Your token should look like this `authToken = 'BQCSPiXSfqDyw5dJZaEw5tfofIpvfzX9msCDJeTWvpH_vNfdlK2pKWZYJZP5t91i-Qj2OPRMXpZ9-mvclpPno-K2VbiZNoht_2fo47lpKgnhNjivB_B8uNQDUaJxD56btH2o'`
+3. Place your OAuth Token inside `services` folder - `music.service.ts` file. Your token should look like this `authToken = 'BQCSPiXSfqDyw5dJZaEw5tfofIpvfzX9msCDJeTWvpH_vNfdlK2pKWZYJZP5t91i-Qj2OPRMXpZ9-mvclpPno-K2VbiZNoht_2fo47lpKgnhNjivB_B8uNQDUaJxD56btH2o'`
 4. Run program in comand line `ng s`
 5. Go to http://localhost:4200  
 

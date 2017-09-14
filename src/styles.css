@@ -42,3 +42,9 @@ h1{
 .form-control{
   border: none;
 }
+.well{
+    background-color: #85d8ac;
+}
+a{
+    color: #fff;
+}
