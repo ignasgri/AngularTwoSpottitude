@@ -14,7 +14,7 @@ private albumUrl:string;
   }
 searchMusic(str: string, type = 'artist') {
   let headers = new Headers();
-  let authToken = 'BQAFYHZvBYrU8pc0T0VchmdzJy3BXB4hJClZu2n-ukS_lyNYfxAGBz679YEdBLQeuqBiwWYvOfo1DvYvrmds6yAPtjqLmjROdPey9llM3JBWa7xyUhCehu9Ejw1m-F5WnHSV';
+  let authToken = 'BQCSPiXSfqDyw5dJZaEw5tfofIpvfzX9msCDJeTWvpH_vNfdlK2pKWZYJZP5t91i-Qj2OPRMXpZ9-mvclpPno-K2VbiZNoht_2fo47lpKgnhNjivB_B8uNQDUaJxD56btH2o';
   headers.append('Authorization', 'Bearer '+authToken);
   		this.searchUrl = "https://api.spotify.com/v1/search?query="
   			+ str + "&offset=0&limit=20&type="
@@ -24,7 +24,7 @@ searchMusic(str: string, type = 'artist') {
   	}
  getArtist(id: string) {
   let headers = new Headers();
-  let authToken = 'BQAFYHZvBYrU8pc0T0VchmdzJy3BXB4hJClZu2n-ukS_lyNYfxAGBz679YEdBLQeuqBiwWYvOfo1DvYvrmds6yAPtjqLmjROdPey9llM3JBWa7xyUhCehu9Ejw1m-F5WnHSV';
+  let authToken = 'BQCSPiXSfqDyw5dJZaEw5tfofIpvfzX9msCDJeTWvpH_vNfdlK2pKWZYJZP5t91i-Qj2OPRMXpZ9-mvclpPno-K2VbiZNoht_2fo47lpKgnhNjivB_B8uNQDUaJxD56btH2o';
   headers.append('Authorization', 'Bearer '+authToken);
   		this.artistUrl = "https://api.spotify.com/v1/artists/" + id;
   return this._http.get(this.artistUrl, { headers }).map(res => res.json());
@@ -33,7 +33,7 @@ searchMusic(str: string, type = 'artist') {
 
  getAlbums(artistId: string) {
 let headers = new Headers();
-let authToken = 'BQAFYHZvBYrU8pc0T0VchmdzJy3BXB4hJClZu2n-ukS_lyNYfxAGBz679YEdBLQeuqBiwWYvOfo1DvYvrmds6yAPtjqLmjROdPey9llM3JBWa7xyUhCehu9Ejw1m-F5WnHSV';
+let authToken = 'BQCSPiXSfqDyw5dJZaEw5tfofIpvfzX9msCDJeTWvpH_vNfdlK2pKWZYJZP5t91i-Qj2OPRMXpZ9-mvclpPno-K2VbiZNoht_2fo47lpKgnhNjivB_B8uNQDUaJxD56btH2o';
 headers.append('Authorization', 'Bearer '+authToken);
   		this.albumsUrl = "https://api.spotify.com/v1/artists/" + artistId + "/albums";
   return this._http.get(this.albumsUrl, { headers }).map(res => res.json());
@@ -41,7 +41,7 @@ headers.append('Authorization', 'Bearer '+authToken);
 
  getAlbum(id: string) {
 let headers = new Headers();
-let authToken = 'BQAFYHZvBYrU8pc0T0VchmdzJy3BXB4hJClZu2n-ukS_lyNYfxAGBz679YEdBLQeuqBiwWYvOfo1DvYvrmds6yAPtjqLmjROdPey9llM3JBWa7xyUhCehu9Ejw1m-F5WnHSV';
+let authToken = 'BQCSPiXSfqDyw5dJZaEw5tfofIpvfzX9msCDJeTWvpH_vNfdlK2pKWZYJZP5t91i-Qj2OPRMXpZ9-mvclpPno-K2VbiZNoht_2fo47lpKgnhNjivB_B8uNQDUaJxD56btH2o';
 headers.append('Authorization', 'Bearer '+authToken);
   		this.albumUrl = "https://api.spotify.com/v1/albums/" + id;
   return this._http.get(this.albumUrl, { headers }).map(res => res.json());
